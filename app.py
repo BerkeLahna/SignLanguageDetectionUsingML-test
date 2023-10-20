@@ -44,7 +44,7 @@ with mp_hands.Hands(
         # Make detections
         cropframe=frame[40:400,0:300]
         # print(frame.shape)
-        frame=cv2.rectangle(frame,(0,40),(300,400),255,2)
+        frame=cv2.rectangle(frame,(50,40),(300,400),255,2)
         # frame=cv2.putText(frame,"Active Region",(75,25),cv2.FONT_HERSHEY_COMPLEX_SMALL,2,255,2)
         image, results = mediapipe_detection(cropframe, hands)
         # print(results)
